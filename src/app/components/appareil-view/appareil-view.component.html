@@ -1,0 +1,15 @@
+<div class="">
+  <div class="">
+    <div class="">
+      <h2>Mes appareils</h2>
+      <ul>
+        <app-appareil *ngFor="let appareil of appareils"
+          [appareilName]="appareil.name"
+          [appareilStatus]="appareil.statut">
+        </app-appareil>
+      </ul>
+      <button mat-raised-button color="primary">Tout allumer</button>
+      <button mat-raised-button>Tout éteindre</button>
+    </div>
+  </div>
+</div>
