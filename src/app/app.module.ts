@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,9 +17,8 @@ import { PostListComponent } from './components/blog/component/post-list/post-li
 import { PostListItemComponent } from './components/blog/component/post-list-item/post-list-item.component';
 import { AppareilComponent } from './components/appareil/appareil.component';
 import { AppareilViewComponent } from './components/appareil-view/appareil-view.component';
-
-import { AppareilModule } from './components/appareil/appareil.module';
-import { AppareilViewModule } from './components/appareil-view/appareil-view.module';
+// import { AppareilModule } from './components/appareil/appareil.module';
+// import { AppareilViewModule } from './components/appareil-view/appareil-view.module';
 
 @NgModule({
   declarations: [
@@ -38,8 +39,10 @@ import { AppareilViewModule } from './components/appareil-view/appareil-view.mod
     MatSliderModule,
     CommonModule,
     FormsModule,
-    AppareilViewModule,
-    AppareilModule
+    MatFormFieldModule,
+    MatInputModule,
+    // AppareilViewModule,
+    // AppareilModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,10 +4,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from '../../app-routing.module';
-import { AppComponent } from '../../app.component';
 import { AppareilModule } from '../appareil/appareil.module';
-import { AppareilComponent } from '../../components/appareil/appareil.component';
-import { AppareilViewComponent } from '../../components/appareil-view/appareil-view.component';
+import { AppareilViewComponent } from './appareil-view.component';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,10 @@ import { AppareilViewComponent } from '../../components/appareil-view/appareil-v
     AppRoutingModule,
     CommonModule,
     FormsModule,
-    AppareilModule
+    AppareilModule,
+    MatSliderModule,
+    CommonModule,
+    FormsModule,
   ],
   exports: [
     AppareilViewComponent,
